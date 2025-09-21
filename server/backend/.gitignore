@@ -1,0 +1,11 @@
+bin/
+dist/
+.env
+*.local
+backend
+server
+*.log
+*.swp
+**/.DS_Store
+
+Food-Delivery-Website/backend/cursor_migration_from_javascript_to_go.md

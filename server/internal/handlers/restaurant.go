@@ -8,8 +8,8 @@ import (
 
     "github.com/gin-gonic/gin"
     "github.com/cloudinary/cloudinary-go/v2/api/uploader"
-    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/backend/internal/models"
-    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/backend/internal/server"
+    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/internal/models"
+    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/internal/server"
     "go.mongodb.org/mongo-driver/bson"
     "go.mongodb.org/mongo-driver/bson/primitive"
     "go.mongodb.org/mongo-driver/mongo/options"

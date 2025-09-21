@@ -8,7 +8,7 @@ import (
     "github.com/gin-gonic/gin"
     "github.com/stripe/stripe-go/v76"
     "github.com/stripe/stripe-go/v76/checkout/session"
-    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/backend/internal/server"
+    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/internal/server"
     "go.mongodb.org/mongo-driver/bson"
     "go.mongodb.org/mongo-driver/bson/primitive"
 )

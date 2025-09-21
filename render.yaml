@@ -2,7 +2,7 @@ services:
   - type: web
     name: food-delivery-go
     env: go
-    rootDir: server/backend
+    rootDir: server
     plan: free
     buildCommand: go build -o server ./cmd/server
     startCommand: ./server

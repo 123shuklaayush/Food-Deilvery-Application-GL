@@ -1,4 +1,4 @@
-module github.com/123shuklaayush/Food-Deilvery-Application-GL/server/backend
+module github.com/123shuklaayush/Food-Deilvery-Application-GL/server
 
 go 1.23.0
 
@@ -7,7 +7,7 @@ require (
 	github.com/cloudinary/cloudinary-go/v2 v2.13.0
 	github.com/gin-contrib/cors v1.7.4
 	github.com/gin-gonic/gin v1.10.0
-	github.com/golang-jwt/jwt/v5 v5.2.1
+	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/joho/godotenv v1.5.1
 	github.com/stripe/stripe-go/v76 v76.24.0
 	go.mongodb.org/mongo-driver v1.15.0
@@ -25,7 +25,6 @@ require (
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.23.0 // indirect
 	github.com/goccy/go-json v0.10.4 // indirect
-	github.com/golang-jwt/jwt/v4 v4.4.2 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/google/uuid v1.5.0 // indirect
 	github.com/gorilla/schema v1.4.1 // indirect

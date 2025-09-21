@@ -6,7 +6,7 @@ import (
 
     "github.com/gin-gonic/gin"
     jwt "github.com/golang-jwt/jwt/v4"
-    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/backend/internal/server"
+    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/internal/server"
     "go.mongodb.org/mongo-driver/bson"
 )
 

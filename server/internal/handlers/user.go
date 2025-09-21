@@ -5,8 +5,8 @@ import (
     "net/http"
 
     "github.com/gin-gonic/gin"
-    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/backend/internal/models"
-    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/backend/internal/server"
+    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/internal/models"
+    "github.com/123shuklaayush/Food-Deilvery-Application-GL/server/internal/server"
     "go.mongodb.org/mongo-driver/bson"
 )
 

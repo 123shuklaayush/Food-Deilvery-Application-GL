@@ -1,0 +1,6 @@
+.env
+**/node_modules/**
+**/dist/**
+**/.DS_Store
+backend/**
+Food-Delivery-Website/backend/cursor_migration_from_javascript_to_go.md

@@ -3,7 +3,6 @@ dist/
 .env
 *.local
 backend
-server
 *.log
 *.swp
 **/.DS_Store

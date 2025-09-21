@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/index.go": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "routes": [{ "src": "/(.*)", "dest": "/api/index.go" }]
+}

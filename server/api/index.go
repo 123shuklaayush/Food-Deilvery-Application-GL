@@ -41,7 +41,19 @@ func init() {
 
 	r := gin.New()
 	r.Use(gin.Recovery())
-	r.Use(cors.Default())
+	
+	// Configure CORS to allow frontend domain
+	config := cors.DefaultConfig()
+	config.AllowOrigins = []string{
+		"https://food-delivery-gl-fe.vercel.app",
+		"https://food-delivery-gl-fe-ayush-shuklas-projects-3387b22a.vercel.app",
+		"http://localhost:5173", // For local development
+	}
+	config.AllowMethods = []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"}
+	config.AllowHeaders = []string{"Origin", "Content-Type", "Accept", "Authorization"}
+	config.AllowCredentials = true
+	
+	r.Use(cors.New(config))
 
 	s := srv.New(r, client)
 

@@ -5,7 +5,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"sync"
 	"time"
 
 	cors "github.com/gin-contrib/cors"
@@ -18,12 +17,9 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var (
-	initOnce sync.Once
-	engine   *gin.Engine
-)
+var engine *gin.Engine
 
-func initServer() {
+func init() {
 	_ = godotenv.Load()
 
 	mongoURI := os.Getenv("MONGODB_CONNECTION_STRING")
@@ -93,6 +89,8 @@ func initServer() {
 
 // Handler is the Vercel Serverless Function entrypoint.
 func Handler(w http.ResponseWriter, r *http.Request) {
-	initOnce.Do(initServer)
+	if engine == nil {
+		init()
+	}
 	engine.ServeHTTP(w, r)
 }
